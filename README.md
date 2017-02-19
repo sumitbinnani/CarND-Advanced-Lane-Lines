@@ -2,7 +2,5 @@
 
 Would be updating the writeup and method of implementation soon.
 
-
-<video width="960" height="540" controls>
-  <source src="project_video_sample.mp4">
-</video>
+The video can be accessed by clicking the following image link:
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Uf9iPxb4UN8/0.jpg)](http://www.youtube.com/watch?v=Uf9iPxb4UN8)
