@@ -2,7 +2,7 @@
 # Advance Lane Detection Project Report
 ***
 
-_The Markdown Report was generated from [this jupyter notebook](). To access the code for all the steps listed below, kindly go through the aforementioned notebook._
+_The Markdown Report was generated from [this jupyter notebook]('Pipeline for Advance Lane Detection.ipynb'). To access the code for all the steps listed below, kindly go through the aforementioned notebook._
 
 ## Goals and Objectives
 ---
@@ -25,9 +25,6 @@ The goals / steps of this project are the following:
 I start by preparing "object points", which will be the (x, y, z) coordinates of the chessboard corners in the world. Here I am assuming the chessboard is fixed on the (x, y) plane at z=0, such that the object points are the same for each calibration image.  Thus, `objp` is just a replicated array of coordinates, and `object_points` will be appended with a copy of it every time I successfully detect all chessboard corners in a test image and `img_points` will be appended with the (x, y) pixel position of each of the corners in the image. The code tries to find a chessboard pattern of 6 rows and 9 columns and if it fails, try to search for a chessboard pattern of 5 rows and 9 columns. I then used the output `obj_points` and `img_points` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.
 
 The code for the same has been implemented in _./utils/cameraCalibration.py_ (check function `get_calibration_matrix()`)
-
-![png](./output_images/output_4_0.png)
-
 
 I then use `cv2.undistort` function (check function `undistort()` in _./utils/cameraCalibration.py_) and obtained the following result:
 
@@ -88,7 +85,7 @@ Once one of the first frames is processed, I use the last known line location to
 ### 3. Radius of Curvature
 If real-world corrdinate (subscript x<sub>real</sub> and y<sub>real</sub>) are related to coordinate in pixel space (x<sub>pix</sub> and y<sub>pix</sub>) by some multiplier, the radius of curvature for real world co-ordinate can be calculated as shown below:
 
-<img src="images/combined.png" alt="Radius Of Curvature" style="width: 300px;"/>
+<img src="images/combined.png" alt="Radius Of Curvature" width="150" />
 
 The radius of curvature for the above image comes out to be `888.142m`. 
     
