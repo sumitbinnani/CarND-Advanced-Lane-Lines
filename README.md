@@ -2,7 +2,7 @@
 # Advance Lane Detection Project Report
 ***
 
-_The Markdown Report was generated from [this jupyter notebook]('Pipeline for Advance Lane Detection.ipynb'). To access the code for all the steps listed below, kindly go through the aforementioned notebook._
+_The Markdown Report was generated from [this jupyter notebook](./Pipeline%20for%20Advance%20Lane%20Detection.ipynb). To access the code for all the steps listed below, kindly go through the aforementioned notebook._
 
 ## Goals and Objectives
 ---
@@ -85,7 +85,7 @@ Once one of the first frames is processed, I use the last known line location to
 ### 3. Radius of Curvature
 If real-world corrdinate (subscript x<sub>real</sub> and y<sub>real</sub>) are related to coordinate in pixel space (x<sub>pix</sub> and y<sub>pix</sub>) by some multiplier, the radius of curvature for real world co-ordinate can be calculated as shown below:
 
-<img src="images/combined.png" alt="Radius Of Curvature" width="150" />
+<img src="images/combined.png" alt="Radius Of Curvature" width="300" />
 
 The radius of curvature for the above image comes out to be `888.142m`. 
     
